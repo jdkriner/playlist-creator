@@ -22,6 +22,8 @@ finalimg = cv2.threshold(clearimg, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OT
 text = pytesseract.image_to_string(finalimg, lang='eng', config='--psm 4')
 print(text)
 
+
+#show images
 cv2.imshow('grey', greyscale)
 cv2.imshow('clear', clearimg)
 cv2.imshow('final', finalimg)
